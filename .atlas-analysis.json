@@ -1,0 +1,143 @@
+{
+  "projectType": "api-service",
+  "projectName": "Carpinchoards API",
+  "projectDescription": "A marketplace API backend for managing publications, users, orders, and real-time communication with Express, MySQL, and Socket.IO.",
+  "theme": "palm",
+  "primaryColor": "#8B6F47",
+  "lightColor": "#D4A574",
+  "darkColor": "#5C4A2F",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "core/architecture",
+              "core/database-models",
+              "core/authentication",
+              "core/real-time"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/setup",
+              "guides/configuration",
+              "guides/deployment"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/auth/login",
+              "api/auth/register",
+              "api/auth/password-reset"
+            ]
+          },
+          {
+            "group": "Publications",
+            "pages": [
+              "api/publications/overview",
+              "api/publications/create",
+              "api/publications/get",
+              "api/publications/update",
+              "api/publications/delete",
+              "api/publications/seller"
+            ]
+          },
+          {
+            "group": "Users",
+            "pages": [
+              "api/users/buyers",
+              "api/users/sellers",
+              "api/users/admin"
+            ]
+          },
+          {
+            "group": "Orders & Purchases",
+            "pages": [
+              "api/orders/overview",
+              "api/orders/create",
+              "api/orders/manage"
+            ]
+          },
+          {
+            "group": "Chat & Messaging",
+            "pages": [
+              "api/chat/overview",
+              "api/chat/websockets",
+              "api/chat/messages"
+            ]
+          },
+          {
+            "group": "Notifications",
+            "pages": [
+              "api/notifications/overview",
+              "api/notifications/real-time"
+            ]
+          },
+          {
+            "group": "Categories & Locations",
+            "pages": [
+              "api/categories/overview",
+              "api/locations/overview"
+            ]
+          },
+          {
+            "group": "Contact",
+            "pages": [
+              "api/contact/overview"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "User authentication with JWT (buyers, sellers, admins)",
+    "Publication management with image uploads",
+    "Order and purchase processing",
+    "Real-time chat with Socket.IO",
+    "Real-time notifications system",
+    "Category and location management",
+    "Admin dashboard capabilities",
+    "Password reset via email"
+  ],
+  "publicApiSurface": [
+    "POST /api/login",
+    "POST /buyers",
+    "POST /register-seller",
+    "POST /publications",
+    "GET /publications",
+    "GET /publications/:id",
+    "PUT /publications/:id",
+    "DELETE /publications/:id",
+    "GET /seller/:sellerId",
+    "POST /orders",
+    "GET /orders/:id",
+    "GET /categories",
+    "GET /locations/provinces",
+    "GET /locations/cities",
+    "POST /contact",
+    "GET /chats",
+    "POST /chats",
+    "GET /notifications",
+    "Socket.IO: join, sendMessage, receiveMessage",
+    "Socket.IO: client:join_notifications"
+  ]
+}
